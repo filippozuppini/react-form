@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+
+body{
+    padding: 2rem 10rem;
+}
+
+.pageTitle{
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+
+.article{
+    padding: 2rem;
+    border: 1px solid rgb(202, 202, 202);
+    margin: 30px 0;
+}
