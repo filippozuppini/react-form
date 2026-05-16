@@ -37,6 +37,16 @@ function App() {
   }
 
 
+  function removeArticle (indexToRemove){
+
+    const fileterdArticle = articles.filter((article, i) => indexToRemove !== i)
+
+    console.log(fileterdArticle);
+
+    setArticles(fileterdArticle)
+  }
+
+
   const [articles, setArticles] = useState(initialArticles)
   const [newArticles, setNewArticles] = useState('')
 
@@ -64,6 +74,10 @@ function App() {
           articles.map((article,i) => (
             <div className="article" key={article.id}>
               <h1>{article.title}</h1>
+
+              <button>
+                <div className="icon bi bi-trash-fill" onClick={()=> removeArticle(i)}></div>
+              </button>
             </div>
 
           ))
